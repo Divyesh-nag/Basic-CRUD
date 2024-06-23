@@ -120,7 +120,7 @@ app.post("/login", (req, res) => {
   }
 });
 
-// SOUL Admin View User Details
+//   Admin View User Details
 app.get("/getAllUsers", (req, res) => {
   try {
     const sql =
@@ -138,7 +138,7 @@ app.get("/getAllUsers", (req, res) => {
   }
 });
 
-// SOUL Admin Add User
+//   Admin Add User
 app.post("/adminAddUser", (req, res) => {
   try {
     let { name, phone, email, gender } = req.body;
@@ -187,7 +187,7 @@ app.post("/adminAddUser", (req, res) => {
   }
 });
 
-// SOUL Admin Edit User
+//   Admin Edit User
 app.put("/adminEditUser", (req, res) => {
   try {
     const { name, phone, email, gender, user_id } =
@@ -220,7 +220,7 @@ app.put("/adminEditUser", (req, res) => {
   }
 });
 
-// SOUL Admin Delete User
+//   Admin Delete User
 app.put("/adminDeleteUser/:user_id", (req, res) => {
   try {
     let user_id = req.params.user_id;
